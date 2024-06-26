@@ -1,0 +1,1070 @@
+400e1ab4 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode>:
+400e1ab4:	02c136        	entry	a1, 0x160
+400e1ab7:	042372        	l32i	a7, a3, 16
+400e1aba:	47cc      	bnez.n	a7, 400e1ac2 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0xe>
+400e1abc:	201110        	or	a1, a1, a1
+400e1abf:	ad0f65        	call8	4008ebb4 <abort>
+400e1ac2:	3368      	l32i.n	a6, a3, 12
+400e1ac4:	ff4616        	beqz	a6, 400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1ac7:	03bd      	mov.n	a11, a3
+400e1ac9:	02ad      	mov.n	a10, a2
+400e1acb:	bcc691        	l32r	a9, 400d0de4 <_stext+0xdc4> (3f42828c <_ZN6tflite19kPoolingInputTensorE>)
+400e1ace:	09c8      	l32i.n	a12, a9, 0
+400e1ad0:	040565        	call8	400e5b28 <_ZN6tflite5micro12GetEvalInputEPK13TfLiteContextPK10TfLiteNodei>
+400e1ad3:	0a4d      	mov.n	a4, a10
+400e1ad5:	03bd      	mov.n	a11, a3
+400e1ad7:	bcc491        	l32r	a9, 400d0de8 <_stext+0xdc8> (3f428288 <_ZN6tflite20kPoolingOutputTensorE>)
+400e1ada:	02ad      	mov.n	a10, a2
+400e1adc:	0029c2        	l32i	a12, a9, 0
+400e1adf:	040865        	call8	400e5b64 <_ZN6tflite5micro13GetEvalOutputEPK13TfLiteContextPK10TfLiteNodei>
+400e1ae2:	205aa0        	or	a5, a10, a10
+400e1ae5:	a14be5        	call8	40082fa4 <esp_timer_get_time>
+400e1ae8:	2498      	l32i.n	a9, a4, 8
+400e1aea:	4861a2        	s32i	a10, a1, 0x120
+400e1aed:	4961b2        	s32i	a11, a1, 0x124
+400e1af0:	027966        	bnei	a9, 7, 400e1af6 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x42>
+400e1af3:	0081c6        	j	400e1cfe <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x24a>
+400e1af6:	9a0c      	movi.n	a10, 9
+400e1af8:	1819a7        	beq	a9, a10, 400e1b14 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x60>
+400e1afb:	021926        	beqi	a9, 1, 400e1b01 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x4d>
+400e1afe:	013b86        	j	400e1ff0 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x53c>
+400e1b01:	05fd      	mov.n	a15, a5
+400e1b03:	04ed      	mov.n	a14, a4
+400e1b05:	06dd      	mov.n	a13, a6
+400e1b07:	07cd      	mov.n	a12, a7
+400e1b09:	03bd      	mov.n	a11, a3
+400e1b0b:	02ad      	mov.n	a10, a2
+400e1b0d:	0455e5        	call8	400e606c <_ZN6tflite19MaxPoolingEvalFloatEP13TfLiteContextP10TfLiteNodeP16TfLitePoolParamsPKNS_13OpDataPoolingEPK16TfLiteEvalTensorPS9_>
+400e1b10:	013d06        	j	400e2008 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x554>
+400e1b13:	00          	.byte	00
+400e1b14:	30c122        	addi	a2, a1, 48
+400e1b17:	022782        	l32i	a8, a7, 8
+400e1b1a:	54c2a2        	addi	a10, a2, 84
+400e1b1d:	20b440        	or	a11, a4, a4
+400e1b20:	3728      	l32i.n	a2, a7, 12
+400e1b22:	4638      	l32i.n	a3, a6, 16
+400e1b24:	1798      	l32i.n	a9, a7, 4
+400e1b26:	47c8      	l32i.n	a12, a7, 16
+400e1b28:	286182        	s32i	a8, a1, 160
+400e1b2b:	2b6122        	s32i	a2, a1, 172
+400e1b2e:	1688      	l32i.n	a8, a6, 4
+400e1b30:	5628      	l32i.n	a2, a6, 20
+400e1b32:	002662        	l32i	a6, a6, 0
+400e1b35:	296192        	s32i	a9, a1, 164
+400e1b38:	2a61c2        	s32i	a12, a1, 168
+400e1b3b:	316182        	s32i	a8, a1, 196
+400e1b3e:	326162        	s32i	a6, a1, 200
+400e1b41:	040465        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1b44:	05bd      	mov.n	a11, a5
+400e1b46:	68c1a2        	addi	a10, a1, 104
+400e1b49:	0403e5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1b4c:	02a237        	bge	a2, a3, 400e1b52 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x9e>
+400e1b4f:	ffda46        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1b52:	212182        	l32i	a8, a1, 132
+400e1b55:	024826        	beqi	a8, 4, 400e1b5b <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0xa7>
+400e1b58:	ffd806        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1b5b:	1a2182        	l32i	a8, a1, 104
+400e1b5e:	024826        	beqi	a8, 4, 400e1b64 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0xb0>
+400e1b61:	ffd5c6        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1b64:	222182        	l32i	a8, a1, 136
+400e1b67:	1b2192        	l32i	a9, a1, 108
+400e1b6a:	021897        	beq	a8, a9, 400e1b70 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0xbc>
+400e1b6d:	ffd2c6        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1b70:	252172        	l32i	a7, a1, 148
+400e1b73:	1e2192        	l32i	a9, a1, 120
+400e1b76:	021977        	beq	a9, a7, 400e1b7c <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0xc8>
+400e1b79:	ffcfc6        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1b7c:	2321c2        	l32i	a12, a1, 140
+400e1b7f:	2421d2        	l32i	a13, a1, 144
+400e1b82:	1c21a2        	l32i	a10, a1, 112
+400e1b85:	1d21b2        	l32i	a11, a1, 116
+400e1b88:	0448      	l32i.n	a4, a4, 0
+400e1b8a:	f2e516        	beqz	a5, 400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1b8d:	82fdc0        	mull	a15, a13, a12
+400e1b90:	82eba0        	mull	a14, a11, a10
+400e1b93:	82ff70        	mull	a15, a15, a7
+400e1b96:	149070        	extui	a9, a7, 0, 2
+400e1b99:	3361f2        	s32i	a15, a1, 204
+400e1b9c:	82fe70        	mull	a15, a14, a7
+400e1b9f:	3461f2        	s32i	a15, a1, 208
+400e1ba2:	0568      	l32i.n	a6, a5, 0
+400e1ba4:	998c      	beqz.n	a9, 400e1bb1 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0xfd>
+400e1ba6:	0218a6        	blti	a8, 1, 400e1bac <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0xf8>
+400e1ba9:	002b06        	j	400e1c59 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x1a5>
+400e1bac:	011606        	j	400e2008 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x554>
+400e1baf:	00          	.byte	00
+400e1bb0:	00          	.byte	00
+400e1bb1:	0218e6        	bgei	a8, 1, 400e1bb7 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x103>
+400e1bb4:	011406        	j	400e2008 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x554>
+400e1bb7:	292152        	l32i	a5, a1, 164
+400e1bba:	f4c0c0        	extui	a12, a12, 0, 16
+400e1bbd:	f45050        	extui	a5, a5, 0, 16
+400e1bc0:	f4d0d0        	extui	a13, a13, 0, 16
+400e1bc3:	f4b0b0        	extui	a11, a11, 0, 16
+400e1bc6:	2e6152        	s32i	a5, a1, 184
+400e1bc9:	f4a0a0        	extui	a10, a10, 0, 16
+400e1bcc:	f47070        	extui	a7, a7, 0, 16
+400e1bcf:	282152        	l32i	a5, a1, 160
+400e1bd2:	f45050        	extui	a5, a5, 0, 16
+400e1bd5:	2f6152        	s32i	a5, a1, 188
+400e1bd8:	2b2152        	l32i	a5, a1, 172
+400e1bdb:	f45050        	extui	a5, a5, 0, 16
+400e1bde:	296152        	s32i	a5, a1, 164
+400e1be1:	2a2152        	l32i	a5, a1, 168
+400e1be4:	f45050        	extui	a5, a5, 0, 16
+400e1be7:	286152        	s32i	a5, a1, 160
+400e1bea:	322152        	l32i	a5, a1, 200
+400e1bed:	f45050        	extui	a5, a5, 0, 16
+400e1bf0:	3061c2        	s32i	a12, a1, 192
+400e1bf3:	3121c2        	l32i	a12, a1, 196
+400e1bf6:	2a6152        	s32i	a5, a1, 168
+400e1bf9:	f450c0        	extui	a5, a12, 0, 16
+400e1bfc:	2c61d2        	s32i	a13, a1, 176
+400e1bff:	3561b2        	s32i	a11, a1, 212
+400e1c02:	2d61a2        	s32i	a10, a1, 180
+400e1c05:	2b6182        	s32i	a8, a1, 172
+400e1c08:	06dd      	mov.n	a13, a6
+400e1c0a:	04ad      	mov.n	a10, a4
+400e1c0c:	2a2182        	l32i	a8, a1, 168
+400e1c0f:	4189      	s32i.n	a8, a1, 16
+400e1c11:	282182        	l32i	a8, a1, 160
+400e1c14:	3189      	s32i.n	a8, a1, 12
+400e1c16:	292182        	l32i	a8, a1, 164
+400e1c19:	2189      	s32i.n	a8, a1, 8
+400e1c1b:	2f2182        	l32i	a8, a1, 188
+400e1c1e:	1189      	s32i.n	a8, a1, 4
+400e1c20:	2e2182        	l32i	a8, a1, 184
+400e1c23:	2d21f2        	l32i	a15, a1, 180
+400e1c26:	3521e2        	l32i	a14, a1, 212
+400e1c29:	3021c2        	l32i	a12, a1, 192
+400e1c2c:	2c21b2        	l32i	a11, a1, 176
+400e1c2f:	0189      	s32i.n	a8, a1, 0
+400e1c31:	4d6192        	s32i	a9, a1, 0x134
+400e1c34:	8179      	s32i.n	a7, a1, 32
+400e1c36:	7129      	s32i.n	a2, a1, 28
+400e1c38:	6139      	s32i.n	a3, a1, 24
+400e1c3a:	056152        	s32i	a5, a1, 20
+400e1c3d:	20aba5        	call8	401026f8 <esp_nn_max_pool_s8_ansi>
+400e1c40:	332182        	l32i	a8, a1, 204
+400e1c43:	448a      	add.n	a4, a4, a8
+400e1c45:	342182        	l32i	a8, a1, 208
+400e1c48:	668a      	add.n	a6, a6, a8
+400e1c4a:	4d2192        	l32i	a9, a1, 0x134
+400e1c4d:	991b      	addi.n	a9, a9, 1
+400e1c4f:	2b2182        	l32i	a8, a1, 172
+400e1c52:	b29987        	bne	a9, a8, 400e1c08 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x154>
+400e1c55:	00ebc6        	j	400e2008 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x554>
+400e1c58:	00          	.byte	00
+400e1c59:	282152        	l32i	a5, a1, 160
+400e1c5c:	f4c0c0        	extui	a12, a12, 0, 16
+400e1c5f:	f45050        	extui	a5, a5, 0, 16
+400e1c62:	f4d0d0        	extui	a13, a13, 0, 16
+400e1c65:	f4b0b0        	extui	a11, a11, 0, 16
+400e1c68:	2c6152        	s32i	a5, a1, 176
+400e1c6b:	f4a0a0        	extui	a10, a10, 0, 16
+400e1c6e:	f47070        	extui	a7, a7, 0, 16
+400e1c71:	2b2152        	l32i	a5, a1, 172
+400e1c74:	f45050        	extui	a5, a5, 0, 16
+400e1c77:	2f61c2        	s32i	a12, a1, 188
+400e1c7a:	2921c2        	l32i	a12, a1, 164
+400e1c7d:	f490c0        	extui	a9, a12, 0, 16
+400e1c80:	296152        	s32i	a5, a1, 164
+400e1c83:	2a2152        	l32i	a5, a1, 168
+400e1c86:	f45050        	extui	a5, a5, 0, 16
+400e1c89:	286152        	s32i	a5, a1, 160
+400e1c8c:	322152        	l32i	a5, a1, 200
+400e1c8f:	f45050        	extui	a5, a5, 0, 16
+400e1c92:	2a6152        	s32i	a5, a1, 168
+400e1c95:	312152        	l32i	a5, a1, 196
+400e1c98:	f45050        	extui	a5, a5, 0, 16
+400e1c9b:	2b6152        	s32i	a5, a1, 172
+400e1c9e:	050c      	movi.n	a5, 0
+400e1ca0:	3061d2        	s32i	a13, a1, 192
+400e1ca3:	2e61b2        	s32i	a11, a1, 184
+400e1ca6:	2d61a2        	s32i	a10, a1, 180
+400e1ca9:	316182        	s32i	a8, a1, 196
+400e1cac:	20d660        	or	a13, a6, a6
+400e1caf:	20a440        	or	a10, a4, a4
+400e1cb2:	01c552        	addi	a5, a5, 1
+400e1cb5:	2b2182        	l32i	a8, a1, 172
+400e1cb8:	5189      	s32i.n	a8, a1, 20
+400e1cba:	2a2182        	l32i	a8, a1, 168
+400e1cbd:	4189      	s32i.n	a8, a1, 16
+400e1cbf:	282182        	l32i	a8, a1, 160
+400e1cc2:	3189      	s32i.n	a8, a1, 12
+400e1cc4:	292182        	l32i	a8, a1, 164
+400e1cc7:	2189      	s32i.n	a8, a1, 8
+400e1cc9:	2c2182        	l32i	a8, a1, 176
+400e1ccc:	2d21f2        	l32i	a15, a1, 180
+400e1ccf:	2e21e2        	l32i	a14, a1, 184
+400e1cd2:	2f21c2        	l32i	a12, a1, 188
+400e1cd5:	3021b2        	l32i	a11, a1, 192
+400e1cd8:	1189      	s32i.n	a8, a1, 4
+400e1cda:	0199      	s32i.n	a9, a1, 0
+400e1cdc:	4d6192        	s32i	a9, a1, 0x134
+400e1cdf:	8179      	s32i.n	a7, a1, 32
+400e1ce1:	7129      	s32i.n	a2, a1, 28
+400e1ce3:	6139      	s32i.n	a3, a1, 24
+400e1ce5:	20a125        	call8	401026f8 <esp_nn_max_pool_s8_ansi>
+400e1ce8:	332182        	l32i	a8, a1, 204
+400e1ceb:	448a      	add.n	a4, a4, a8
+400e1ced:	342182        	l32i	a8, a1, 208
+400e1cf0:	668a      	add.n	a6, a6, a8
+400e1cf2:	312182        	l32i	a8, a1, 196
+400e1cf5:	4d2192        	l32i	a9, a1, 0x134
+400e1cf8:	b09587        	bne	a5, a8, 400e1cac <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x1f8>
+400e1cfb:	00c246        	j	400e2008 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x554>
+400e1cfe:	022792        	l32i	a9, a7, 8
+400e1d01:	20b440        	or	a11, a4, a4
+400e1d04:	4cc1a2        	addi	a10, a1, 76
+400e1d07:	17c8      	l32i.n	a12, a7, 4
+400e1d09:	4728      	l32i.n	a2, a7, 16
+400e1d0b:	3788      	l32i.n	a8, a7, 12
+400e1d0d:	3b6192        	s32i	a9, a1, 236
+400e1d10:	3161c2        	s32i	a12, a1, 196
+400e1d13:	029692        	l16si	a9, a6, 4
+400e1d16:	0096c2        	l16si	a12, a6, 0
+400e1d19:	4678      	l32i.n	a7, a6, 16
+400e1d1b:	406122        	s32i	a2, a1, 0x100
+400e1d1e:	5668      	l32i.n	a6, a6, 20
+400e1d20:	416182        	s32i	a8, a1, 0x104
+400e1d23:	3c6192        	s32i	a9, a1, 240
+400e1d26:	3261c2        	s32i	a12, a1, 200
+400e1d29:	03e5e5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1d2c:	05bd      	mov.n	a11, a5
+400e1d2e:	30c1a2        	addi	a10, a1, 48
+400e1d31:	0448      	l32i.n	a4, a4, 0
+400e1d33:	426142        	s32i	a4, a1, 0x108
+400e1d36:	03e525        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1d39:	d7f516        	beqz	a5, 400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1d3c:	0558      	l32i.n	a5, a5, 0
+400e1d3e:	436152        	s32i	a5, a1, 0x10c
+400e1d41:	02a677        	bge	a6, a7, 400e1d47 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x293>
+400e1d44:	ff5d06        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1d47:	bc2a81        	l32r	a8, 400d0df0 <_stext+0xdd0> (ffff8000 <_rtc_slow_reserved_end+0xafff6000>)
+400e1d4a:	02a787        	bge	a7, a8, 400e1d50 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x29c>
+400e1d4d:	ff5ac6        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1d50:	ba3181        	l32r	a8, 400d0614 <_stext+0x5f4> (7fff <UserFrameTotalSize+0x7eff>)
+400e1d53:	02a867        	bge	a8, a6, 400e1d59 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x2a5>
+400e1d56:	ff5886        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1d59:	132182        	l32i	a8, a1, 76
+400e1d5c:	024826        	beqi	a8, 4, 400e1d62 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x2ae>
+400e1d5f:	ff5646        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1d62:	c188      	l32i.n	a8, a1, 48
+400e1d64:	024826        	beqi	a8, 4, 400e1d6a <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x2b6>
+400e1d67:	ff5446        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1d6a:	142122        	l32i	a2, a1, 80
+400e1d6d:	d188      	l32i.n	a8, a1, 52
+400e1d6f:	2f6122        	s32i	a2, a1, 188
+400e1d72:	021827        	beq	a8, a2, 400e1d78 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x2c4>
+400e1d75:	ff50c6        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1d78:	1721e2        	l32i	a14, a1, 92
+400e1d7b:	102182        	l32i	a8, a1, 64
+400e1d7e:	0218e7        	beq	a8, a14, 400e1d84 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x2d0>
+400e1d81:	ff4dc6        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1d84:	152152        	l32i	a5, a1, 84
+400e1d87:	e188      	l32i.n	a8, a1, 56
+400e1d89:	f198      	l32i.n	a9, a1, 60
+400e1d8b:	286152        	s32i	a5, a1, 160
+400e1d8e:	336182        	s32i	a8, a1, 204
+400e1d91:	296192        	s32i	a9, a1, 164
+400e1d94:	1621f2        	l32i	a15, a1, 88
+400e1d97:	0212e6        	bgei	a2, 1, 400e1d9d <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x2e9>
+400e1d9a:	009a86        	j	400e2008 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x554>
+400e1d9d:	828890        	mull	a8, a8, a9
+400e1da0:	09ad      	mov.n	a10, a9
+400e1da2:	8288e0        	mull	a8, a8, a14
+400e1da5:	829fe0        	mull	a9, a15, a14
+400e1da8:	050c      	movi.n	a5, 0
+400e1daa:	82aae0        	mull	a10, a10, a14
+400e1dad:	476182        	s32i	a8, a1, 0x11c
+400e1db0:	899a      	add.n	a8, a9, a9
+400e1db2:	4eea      	add.n	a4, a14, a14
+400e1db4:	23b780        	sext	a11, a7, 15
+400e1db7:	236680        	sext	a6, a6, 15
+400e1dba:	446182        	s32i	a8, a1, 0x110
+400e1dbd:	058d      	mov.n	a8, a5
+400e1dbf:	0f7d      	mov.n	a7, a15
+400e1dc1:	396152        	s32i	a5, a1, 228
+400e1dc4:	2c6152        	s32i	a5, a1, 176
+400e1dc7:	045d      	mov.n	a5, a4
+400e1dc9:	084d      	mov.n	a4, a8
+400e1dcb:	4661a2        	s32i	a10, a1, 0x118
+400e1dce:	4b61b2        	s32i	a11, a1, 0x12c
+400e1dd1:	4c6162        	s32i	a6, a1, 0x130
+400e1dd4:	3e61e2        	s32i	a14, a1, 248
+400e1dd7:	007c06        	j	400e1fcb <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x517>
+400e1dda:	00          	.byte	00
+400e1ddb:	00          	.byte	00
+400e1ddc:	362122        	l32i	a2, a1, 216
+400e1ddf:	050c      	movi.n	a5, 0
+400e1de1:	53c250        	max	a12, a2, a5
+400e1de4:	3721a2        	l32i	a10, a1, 220
+400e1de7:	412122        	l32i	a2, a1, 0x104
+400e1dea:	43aa20        	min	a10, a10, a2
+400e1ded:	452182        	l32i	a8, a1, 0x114
+400e1df0:	986a      	add.n	a9, a8, a6
+400e1df2:	99ca      	add.n	a9, a9, a12
+400e1df4:	829940        	mull	a9, a9, a4
+400e1df7:	2e61a2        	s32i	a10, a1, 184
+400e1dfa:	0a0c      	movi.n	a10, 0
+400e1dfc:	2e21b2        	l32i	a11, a1, 184
+400e1dff:	bb6a      	add.n	a11, a11, a6
+400e1e01:	422152        	l32i	a5, a1, 0x108
+400e1e04:	959a      	add.n	a9, a5, a9
+400e1e06:	352182        	l32i	a8, a1, 212
+400e1e09:	2b61a2        	s32i	a10, a1, 172
+400e1e0c:	306182        	s32i	a8, a1, 192
+400e1e0f:	3d61b2        	s32i	a11, a1, 244
+400e1e12:	09dd      	mov.n	a13, a9
+400e1e14:	2d2122        	l32i	a2, a1, 180
+400e1e17:	a2ea      	add.n	a10, a2, a14
+400e1e19:	3a2152        	l32i	a5, a1, 232
+400e1e1c:	bbf581        	l32r	a8, 400d0df0 <_stext+0xdd0> (ffff8000 <_rtc_slow_reserved_end+0xafff6000>)
+400e1e1f:	02a257        	bge	a2, a5, 400e1e25 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x371>
+400e1e22:	002586        	j	400e1ebc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x408>
+400e1e25:	0027c6        	j	400e1ec8 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x414>
+400e1e28:	282122        	l32i	a2, a1, 160
+400e1e2b:	20b2a0        	or	a11, a2, a10
+400e1e2e:	002a96        	bltz	a10, 400e1e34 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x380>
+400e1e31:	292a27        	blt	a10, a2, 400e1e5e <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3aa>
+400e1e34:	c84b56        	bnez	a11, 400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1e37:	2e2152        	l32i	a5, a1, 184
+400e1e3a:	b6ca      	add.n	a11, a6, a12
+400e1e3c:	356a      	add.n	a3, a5, a6
+400e1e3e:	0d5d      	mov.n	a5, a13
+400e1e40:	2027b0        	or	a2, a7, a11
+400e1e43:	728c      	beqz.n	a2, 400e1e4e <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x39a>
+400e1e45:	c73b96        	bltz	a11, 400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1e48:	022b77        	blt	a11, a7, 400e1e4e <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x39a>
+400e1e4b:	ff1b46        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1e4e:	009522        	l16si	a2, a5, 0
+400e1e51:	bb1b      	addi.n	a11, a11, 1
+400e1e53:	538280        	max	a8, a2, a8
+400e1e56:	554a      	add.n	a5, a5, a4
+400e1e58:	e49b37        	bne	a11, a3, 400e1e40 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x38c>
+400e1e5b:	001386        	j	400e1ead <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3f9>
+400e1e5e:	6bac      	beqz.n	a11, 400e1e88 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3d4>
+400e1e60:	3d2122        	l32i	a2, a1, 244
+400e1e63:	b6ca      	add.n	a11, a6, a12
+400e1e65:	0d3d      	mov.n	a3, a13
+400e1e67:	c052b0        	sub	a5, a2, a11
+400e1e6a:	178576        	loop	a5, 400e1e85 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3d1>
+400e1e6d:	2027b0        	or	a2, a7, a11
+400e1e70:	728c      	beqz.n	a2, 400e1e7b <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3c7>
+400e1e72:	c46b96        	bltz	a11, 400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1e75:	022b77        	blt	a11, a7, 400e1e7b <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3c7>
+400e1e78:	ff1006        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1e7b:	009322        	l16si	a2, a3, 0
+400e1e7e:	bb1b      	addi.n	a11, a11, 1
+400e1e80:	538280        	max	a8, a2, a8
+400e1e83:	334a      	add.n	a3, a3, a4
+400e1e85:	000906        	j	400e1ead <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3f9>
+400e1e88:	3d2122        	l32i	a2, a1, 244
+400e1e8b:	b6ca      	add.n	a11, a6, a12
+400e1e8d:	0d3d      	mov.n	a3, a13
+400e1e8f:	c052b0        	sub	a5, a2, a11
+400e1e92:	178576        	loop	a5, 400e1ead <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3f9>
+400e1e95:	2027b0        	or	a2, a7, a11
+400e1e98:	728c      	beqz.n	a2, 400e1ea3 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3ef>
+400e1e9a:	c1eb96        	bltz	a11, 400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1e9d:	022b77        	blt	a11, a7, 400e1ea3 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3ef>
+400e1ea0:	ff0606        	j	400e1abc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1ea3:	009322        	l16si	a2, a3, 0
+400e1ea6:	bb1b      	addi.n	a11, a11, 1
+400e1ea8:	538280        	max	a8, a2, a8
+400e1eab:	334a      	add.n	a3, a3, a4
+400e1ead:	442152        	l32i	a5, a1, 0x110
+400e1eb0:	01caa2        	addi	a10, a10, 1
+400e1eb3:	80dd50        	add	a13, a13, a5
+400e1eb6:	4a21b2        	l32i	a11, a1, 0x128
+400e1eb9:	0b1ab7        	beq	a10, a11, 400e1ec8 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x414>
+400e1ebc:	2e2122        	l32i	a2, a1, 184
+400e1ebf:	02ac27        	bge	a12, a2, 400e1ec5 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x411>
+400e1ec2:	ffd886        	j	400e1e28 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x374>
+400e1ec5:	fff906        	j	400e1ead <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x3f9>
+400e1ec8:	4b2152        	l32i	a5, a1, 0x12c
+400e1ecb:	992b      	addi.n	a9, a9, 2
+400e1ecd:	538580        	max	a8, a5, a8
+400e1ed0:	4c21a2        	l32i	a10, a1, 0x130
+400e1ed3:	4388a0        	min	a8, a8, a10
+400e1ed6:	3021b2        	l32i	a11, a1, 192
+400e1ed9:	2b2122        	l32i	a2, a1, 172
+400e1edc:	221b      	addi.n	a2, a2, 1
+400e1ede:	005b82        	s16i	a8, a11, 0
+400e1ee1:	0020c0        	memw
+400e1ee4:	bb2b      	addi.n	a11, a11, 2
+400e1ee6:	3e2152        	l32i	a5, a1, 248
+400e1ee9:	2b6122        	s32i	a2, a1, 172
+400e1eec:	3061b2        	s32i	a11, a1, 192
+400e1eef:	021257        	beq	a2, a5, 400e1ef5 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x441>
+400e1ef2:	ffc706        	j	400e1e12 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x35e>
+400e1ef5:	ff1b      	addi.n	a15, a15, 1
+400e1ef7:	3121c2        	l32i	a12, a1, 196
+400e1efa:	66ca      	add.n	a6, a6, a12
+400e1efc:	352182        	l32i	a8, a1, 212
+400e1eff:	884a      	add.n	a8, a8, a4
+400e1f01:	362192        	l32i	a9, a1, 216
+400e1f04:	c099c0        	sub	a9, a9, a12
+400e1f07:	372122        	l32i	a2, a1, 220
+400e1f0a:	c022c0        	sub	a2, a2, a12
+400e1f0d:	292152        	l32i	a5, a1, 164
+400e1f10:	356182        	s32i	a8, a1, 212
+400e1f13:	366192        	s32i	a9, a1, 216
+400e1f16:	376122        	s32i	a2, a1, 220
+400e1f19:	0b15f7        	beq	a5, a15, 400e1f28 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x474>
+400e1f1c:	3e2182        	l32i	a8, a1, 248
+400e1f1f:	0218a6        	blti	a8, 1, 400e1f25 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x471>
+400e1f22:	ffad86        	j	400e1ddc <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x328>
+400e1f25:	fff306        	j	400e1ef5 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x441>
+400e1f28:	342192        	l32i	a9, a1, 208
+400e1f2b:	991b      	addi.n	a9, a9, 1
+400e1f2d:	3821a2        	l32i	a10, a1, 224
+400e1f30:	2a21c2        	l32i	a12, a1, 168
+400e1f33:	3b2122        	l32i	a2, a1, 236
+400e1f36:	c0cc20        	sub	a12, a12, a2
+400e1f39:	ee2a      	add.n	a14, a14, a2
+400e1f3b:	4621b2        	l32i	a11, a1, 0x118
+400e1f3e:	aaba      	add.n	a10, a10, a11
+400e1f40:	332152        	l32i	a5, a1, 204
+400e1f43:	346192        	s32i	a9, a1, 208
+400e1f46:	3861a2        	s32i	a10, a1, 224
+400e1f49:	2a61c2        	s32i	a12, a1, 168
+400e1f4c:	581597        	beq	a5, a9, 400e1fa8 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x4f4>
+400e1f4f:	292182        	l32i	a8, a1, 164
+400e1f52:	d218a6        	blti	a8, 1, 400e1f28 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x474>
+400e1f55:	090c      	movi.n	a9, 0
+400e1f57:	09fd      	mov.n	a15, a9
+400e1f59:	2a21a2        	l32i	a10, a1, 168
+400e1f5c:	53aa90        	max	a10, a10, a9
+400e1f5f:	2a21b2        	l32i	a11, a1, 168
+400e1f62:	2821c2        	l32i	a12, a1, 160
+400e1f65:	402152        	l32i	a5, a1, 0x100
+400e1f68:	2d61a2        	s32i	a10, a1, 180
+400e1f6b:	abca      	add.n	a10, a11, a12
+400e1f6d:	43aa50        	min	a10, a10, a5
+400e1f70:	3f2122        	l32i	a2, a1, 252
+400e1f73:	8e2a      	add.n	a8, a14, a2
+400e1f75:	3a61a2        	s32i	a10, a1, 232
+400e1f78:	2d21a2        	l32i	a10, a1, 180
+400e1f7b:	88aa      	add.n	a8, a8, a10
+400e1f7d:	828870        	mull	a8, a8, a7
+400e1f80:	322122        	l32i	a2, a1, 200
+400e1f83:	572a      	add.n	a5, a7, a2
+400e1f85:	606020        	neg	a6, a2
+400e1f88:	3821b2        	l32i	a11, a1, 224
+400e1f8b:	4321c2        	l32i	a12, a1, 0x10c
+400e1f8e:	90bbc0        	addx2	a11, a11, a12
+400e1f91:	456182        	s32i	a8, a1, 0x114
+400e1f94:	3a2182        	l32i	a8, a1, 232
+400e1f97:	88ea      	add.n	a8, a8, a14
+400e1f99:	3561b2        	s32i	a11, a1, 212
+400e1f9c:	366122        	s32i	a2, a1, 216
+400e1f9f:	376152        	s32i	a5, a1, 220
+400e1fa2:	4a6182        	s32i	a8, a1, 0x128
+400e1fa5:	ffdcc6        	j	400e1f1c <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x468>
+400e1fa8:	045d      	mov.n	a5, a4
+400e1faa:	3f2142        	l32i	a4, a1, 252
+400e1fad:	2c2192        	l32i	a9, a1, 176
+400e1fb0:	991b      	addi.n	a9, a9, 1
+400e1fb2:	3921a2        	l32i	a10, a1, 228
+400e1fb5:	4721b2        	l32i	a11, a1, 0x11c
+400e1fb8:	aaba      	add.n	a10, a10, a11
+400e1fba:	2821c2        	l32i	a12, a1, 160
+400e1fbd:	44ca      	add.n	a4, a4, a12
+400e1fbf:	2f2122        	l32i	a2, a1, 188
+400e1fc2:	2c6192        	s32i	a9, a1, 176
+400e1fc5:	3961a2        	s32i	a10, a1, 228
+400e1fc8:	3c1927        	beq	a9, a2, 400e2008 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x554>
+400e1fcb:	332182        	l32i	a8, a1, 204
+400e1fce:	db18a6        	blti	a8, 1, 400e1fad <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x4f9>
+400e1fd1:	0b0c      	movi.n	a11, 0
+400e1fd3:	3c2192        	l32i	a9, a1, 240
+400e1fd6:	606090        	neg	a6, a9
+400e1fd9:	06ed      	mov.n	a14, a6
+400e1fdb:	3921a2        	l32i	a10, a1, 228
+400e1fde:	3f6142        	s32i	a4, a1, 252
+400e1fe1:	054d      	mov.n	a4, a5
+400e1fe3:	2a6192        	s32i	a9, a1, 168
+400e1fe6:	3861a2        	s32i	a10, a1, 224
+400e1fe9:	3461b2        	s32i	a11, a1, 208
+400e1fec:	ffd7c6        	j	400e1f4f <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x49b>
+400e1fef:	00          	.byte	00
+400e1ff0:	09ad      	mov.n	a10, a9
+400e1ff2:	5278      	l32i.n	a7, a2, 20
+400e1ff4:	01b7a5        	call8	400e3b70 <TfLiteTypeGetName>
+400e1ff7:	0acd      	mov.n	a12, a10
+400e1ff9:	02ad      	mov.n	a10, a2
+400e1ffb:	01a022        	movi	a2, 1
+400e1ffe:	bb7bb1        	l32r	a11, 400d0dec <_stext+0xdcc> (3f4069e4 <_flash_rodata_start+0x68c4>)
+400e2001:	0007e0        	callx8	a7
+400e2004:	000e86        	j	400e2042 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x58e>
+400e2007:	00          	.byte	00
+400e2008:	a0f9a5        	call8	40082fa4 <esp_timer_get_time>
+400e200b:	482122        	l32i	a2, a1, 0x120
+400e200e:	20caa0        	or	a12, a10, a10
+400e2011:	c08a20        	sub	a8, a10, a2
+400e2014:	209bb0        	or	a9, a11, a11
+400e2017:	01a0b2        	movi	a11, 1
+400e201a:	ba3ba1        	l32r	a10, 400d0908 <_stext+0x8e8> (3ffbb6a0 <pooling_total_time>)
+400e201d:	013c87        	bltu	a12, a8, 400e2022 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x56e>
+400e2020:	0b0c      	movi.n	a11, 0
+400e2022:	0ad8      	l32i.n	a13, a10, 0
+400e2024:	8d8a      	add.n	a8, a13, a8
+400e2026:	492152        	l32i	a5, a1, 0x124
+400e2029:	c09950        	sub	a9, a9, a5
+400e202c:	c099b0        	sub	a9, a9, a11
+400e202f:	1b0c      	movi.n	a11, 1
+400e2031:	1ac8      	l32i.n	a12, a10, 4
+400e2033:	0138d7        	bltu	a8, a13, 400e2038 <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x584>
+400e2036:	0b0c      	movi.n	a11, 0
+400e2038:	9c9a      	add.n	a9, a12, a9
+400e203a:	bb9a      	add.n	a11, a11, a9
+400e203c:	0a89      	s32i.n	a8, a10, 0
+400e203e:	020c      	movi.n	a2, 0
+400e2040:	1ab9      	s32i.n	a11, a10, 4
+400e2042:	0020c0        	memw
+400e2045:	f01d      	retw.n
+	...
+
+400e2048 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode>:
+400e2048:	02c136        	entry	a1, 0x160
+400e204b:	042342        	l32i	a4, a3, 16
+400e204e:	44cc      	bnez.n	a4, 400e2056 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0xe>
+400e2050:	201110        	or	a1, a1, a1
+400e2053:	acb625        	call8	4008ebb4 <abort>
+400e2056:	3358      	l32i.n	a5, a3, 12
+400e2058:	ff4516        	beqz	a5, 400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e205b:	03bd      	mov.n	a11, a3
+400e205d:	02ad      	mov.n	a10, a2
+400e205f:	bb6181        	l32r	a8, 400d0de4 <_stext+0xdc4> (3f42828c <_ZN6tflite19kPoolingInputTensorE>)
+400e2062:	08c8      	l32i.n	a12, a8, 0
+400e2064:	03ac25        	call8	400e5b28 <_ZN6tflite5micro12GetEvalInputEPK13TfLiteContextPK10TfLiteNodei>
+400e2067:	0a7d      	mov.n	a7, a10
+400e2069:	03bd      	mov.n	a11, a3
+400e206b:	bb5f81        	l32r	a8, 400d0de8 <_stext+0xdc8> (3f428288 <_ZN6tflite20kPoolingOutputTensorE>)
+400e206e:	02ad      	mov.n	a10, a2
+400e2070:	0028c2        	l32i	a12, a8, 0
+400e2073:	03af25        	call8	400e5b64 <_ZN6tflite5micro13GetEvalOutputEPK13TfLiteContextPK10TfLiteNodei>
+400e2076:	206aa0        	or	a6, a10, a10
+400e2079:	a0f2a5        	call8	40082fa4 <esp_timer_get_time>
+400e207c:	2788      	l32i.n	a8, a7, 8
+400e207e:	3a61a2        	s32i	a10, a1, 232
+400e2081:	3b61b2        	s32i	a11, a1, 236
+400e2084:	027866        	bnei	a8, 7, 400e208a <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x42>
+400e2087:	008046        	j	400e228c <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x244>
+400e208a:	990c      	movi.n	a9, 9
+400e208c:	181897        	beq	a8, a9, 400e20a8 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x60>
+400e208f:	021826        	beqi	a8, 1, 400e2095 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x4d>
+400e2092:	014086        	j	400e2598 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x550>
+400e2095:	06fd      	mov.n	a15, a6
+400e2097:	07ed      	mov.n	a14, a7
+400e2099:	05dd      	mov.n	a13, a5
+400e209b:	04cd      	mov.n	a12, a4
+400e209d:	03bd      	mov.n	a11, a3
+400e209f:	02ad      	mov.n	a10, a2
+400e20a1:	03caa5        	call8	400e5d4c <_ZN6tflite23AveragePoolingEvalFloatEPK13TfLiteContextPK10TfLiteNodePK16TfLitePoolParamsPKNS_13OpDataPoolingEPK16TfLiteEvalTensorPSC_>
+400e20a4:	014206        	j	400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e20a7:	00          	.byte	00
+400e20a8:	022492        	l32i	a9, a4, 8
+400e20ab:	30c182        	addi	a8, a1, 48
+400e20ae:	54c8a2        	addi	a10, a8, 84
+400e20b1:	20b770        	or	a11, a7, a7
+400e20b4:	1488      	l32i.n	a8, a4, 4
+400e20b6:	306192        	s32i	a9, a1, 192
+400e20b9:	4498      	l32i.n	a9, a4, 16
+400e20bb:	3448      	l32i.n	a4, a4, 12
+400e20bd:	5538      	l32i.n	a3, a5, 20
+400e20bf:	1528      	l32i.n	a2, a5, 4
+400e20c1:	316142        	s32i	a4, a1, 196
+400e20c4:	4548      	l32i.n	a4, a5, 16
+400e20c6:	0558      	l32i.n	a5, a5, 0
+400e20c8:	2f6182        	s32i	a8, a1, 188
+400e20cb:	346192        	s32i	a9, a1, 208
+400e20ce:	356152        	s32i	a5, a1, 212
+400e20d1:	03ab65        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e20d4:	06bd      	mov.n	a11, a6
+400e20d6:	68c1a2        	addi	a10, a1, 104
+400e20d9:	03aae5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e20dc:	02a347        	bge	a3, a4, 400e20e2 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x9a>
+400e20df:	ffdb46        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e20e2:	212182        	l32i	a8, a1, 132
+400e20e5:	024826        	beqi	a8, 4, 400e20eb <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0xa3>
+400e20e8:	ffd906        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e20eb:	1a2182        	l32i	a8, a1, 104
+400e20ee:	024826        	beqi	a8, 4, 400e20f4 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0xac>
+400e20f1:	ffd6c6        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e20f4:	222152        	l32i	a5, a1, 136
+400e20f7:	1b2182        	l32i	a8, a1, 108
+400e20fa:	021587        	beq	a5, a8, 400e2100 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0xb8>
+400e20fd:	ffd3c6        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e2100:	2521a2        	l32i	a10, a1, 148
+400e2103:	1e2182        	l32i	a8, a1, 120
+400e2106:	0218a7        	beq	a8, a10, 400e210c <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0xc4>
+400e2109:	ffd0c6        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e210c:	2321d2        	l32i	a13, a1, 140
+400e210f:	2421e2        	l32i	a14, a1, 144
+400e2112:	1c21b2        	l32i	a11, a1, 112
+400e2115:	1d21c2        	l32i	a12, a1, 116
+400e2118:	0778      	l32i.n	a7, a7, 0
+400e211a:	f32616        	beqz	a6, 400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e211d:	82fed0        	mull	a15, a14, a13
+400e2120:	829cb0        	mull	a9, a12, a11
+400e2123:	82ffa0        	mull	a15, a15, a10
+400e2126:	1480a0        	extui	a8, a10, 0, 2
+400e2129:	2861f2        	s32i	a15, a1, 160
+400e212c:	82f9a0        	mull	a15, a9, a10
+400e212f:	2961f2        	s32i	a15, a1, 164
+400e2132:	0668      	l32i.n	a6, a6, 0
+400e2134:	888c      	beqz.n	a8, 400e2140 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0xf8>
+400e2136:	0215a6        	blti	a5, 1, 400e213c <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0xf4>
+400e2139:	002b06        	j	400e21e9 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x1a1>
+400e213c:	011c06        	j	400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e213f:	00          	.byte	00
+400e2140:	0215e6        	bgei	a5, 1, 400e2146 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0xfe>
+400e2143:	011a46        	j	400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e2146:	2f2192        	l32i	a9, a1, 188
+400e2149:	f4e0e0        	extui	a14, a14, 0, 16
+400e214c:	f49090        	extui	a9, a9, 0, 16
+400e214f:	f4d0d0        	extui	a13, a13, 0, 16
+400e2152:	f4c0c0        	extui	a12, a12, 0, 16
+400e2155:	2e6192        	s32i	a9, a1, 184
+400e2158:	f4b0b0        	extui	a11, a11, 0, 16
+400e215b:	f4a0a0        	extui	a10, a10, 0, 16
+400e215e:	f42020        	extui	a2, a2, 0, 16
+400e2161:	302192        	l32i	a9, a1, 192
+400e2164:	f49090        	extui	a9, a9, 0, 16
+400e2167:	2f6192        	s32i	a9, a1, 188
+400e216a:	312192        	l32i	a9, a1, 196
+400e216d:	f49090        	extui	a9, a9, 0, 16
+400e2170:	306192        	s32i	a9, a1, 192
+400e2173:	342192        	l32i	a9, a1, 208
+400e2176:	f49090        	extui	a9, a9, 0, 16
+400e2179:	316192        	s32i	a9, a1, 196
+400e217c:	352192        	l32i	a9, a1, 212
+400e217f:	f49090        	extui	a9, a9, 0, 16
+400e2182:	346152        	s32i	a5, a1, 208
+400e2185:	085d      	mov.n	a5, a8
+400e2187:	2a61e2        	s32i	a14, a1, 168
+400e218a:	2b61d2        	s32i	a13, a1, 172
+400e218d:	2c61c2        	s32i	a12, a1, 176
+400e2190:	2d61b2        	s32i	a11, a1, 180
+400e2193:	326192        	s32i	a9, a1, 200
+400e2196:	3361a2        	s32i	a10, a1, 204
+400e2199:	20d660        	or	a13, a6, a6
+400e219c:	20a770        	or	a10, a7, a7
+400e219f:	01c552        	addi	a5, a5, 1
+400e21a2:	332182        	l32i	a8, a1, 204
+400e21a5:	322192        	l32i	a9, a1, 200
+400e21a8:	8189      	s32i.n	a8, a1, 32
+400e21aa:	4199      	s32i.n	a9, a1, 16
+400e21ac:	312182        	l32i	a8, a1, 196
+400e21af:	302192        	l32i	a9, a1, 192
+400e21b2:	3189      	s32i.n	a8, a1, 12
+400e21b4:	2199      	s32i.n	a9, a1, 8
+400e21b6:	2f2182        	l32i	a8, a1, 188
+400e21b9:	2e2192        	l32i	a9, a1, 184
+400e21bc:	2d21f2        	l32i	a15, a1, 180
+400e21bf:	2c21e2        	l32i	a14, a1, 176
+400e21c2:	2b21c2        	l32i	a12, a1, 172
+400e21c5:	2a21b2        	l32i	a11, a1, 168
+400e21c8:	1189      	s32i.n	a8, a1, 4
+400e21ca:	0199      	s32i.n	a9, a1, 0
+400e21cc:	7139      	s32i.n	a3, a1, 28
+400e21ce:	6149      	s32i.n	a4, a1, 24
+400e21d0:	5129      	s32i.n	a2, a1, 20
+400e21d2:	2039a5        	call8	4010256c <esp_nn_avg_pool_s8_ansi>
+400e21d5:	282182        	l32i	a8, a1, 160
+400e21d8:	778a      	add.n	a7, a7, a8
+400e21da:	292192        	l32i	a9, a1, 164
+400e21dd:	669a      	add.n	a6, a6, a9
+400e21df:	342182        	l32i	a8, a1, 208
+400e21e2:	b39587        	bne	a5, a8, 400e2199 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x151>
+400e21e5:	00f1c6        	j	400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e21e8:	00          	.byte	00
+400e21e9:	2f2192        	l32i	a9, a1, 188
+400e21ec:	f42020        	extui	a2, a2, 0, 16
+400e21ef:	f49090        	extui	a9, a9, 0, 16
+400e21f2:	f4e0e0        	extui	a14, a14, 0, 16
+400e21f5:	f4d0d0        	extui	a13, a13, 0, 16
+400e21f8:	302182        	l32i	a8, a1, 192
+400e21fb:	f4c0c0        	extui	a12, a12, 0, 16
+400e21fe:	f48080        	extui	a8, a8, 0, 16
+400e2201:	f4b0b0        	extui	a11, a11, 0, 16
+400e2204:	f4a0a0        	extui	a10, a10, 0, 16
+400e2207:	2f6192        	s32i	a9, a1, 188
+400e220a:	312192        	l32i	a9, a1, 196
+400e220d:	f49090        	extui	a9, a9, 0, 16
+400e2210:	306182        	s32i	a8, a1, 192
+400e2213:	316192        	s32i	a9, a1, 196
+400e2216:	342182        	l32i	a8, a1, 208
+400e2219:	f48080        	extui	a8, a8, 0, 16
+400e221c:	352192        	l32i	a9, a1, 212
+400e221f:	f49090        	extui	a9, a9, 0, 16
+400e2222:	2a6122        	s32i	a2, a1, 168
+400e2225:	00a022        	movi	a2, 0
+400e2228:	3261e2        	s32i	a14, a1, 200
+400e222b:	3361d2        	s32i	a13, a1, 204
+400e222e:	2d61c2        	s32i	a12, a1, 180
+400e2231:	2e61b2        	s32i	a11, a1, 184
+400e2234:	2c6182        	s32i	a8, a1, 176
+400e2237:	346192        	s32i	a9, a1, 208
+400e223a:	2b61a2        	s32i	a10, a1, 172
+400e223d:	20d660        	or	a13, a6, a6
+400e2240:	20a770        	or	a10, a7, a7
+400e2243:	01c222        	addi	a2, a2, 1
+400e2246:	2b2182        	l32i	a8, a1, 172
+400e2249:	2a2192        	l32i	a9, a1, 168
+400e224c:	8189      	s32i.n	a8, a1, 32
+400e224e:	342182        	l32i	a8, a1, 208
+400e2251:	5199      	s32i.n	a9, a1, 20
+400e2253:	4189      	s32i.n	a8, a1, 16
+400e2255:	2c2192        	l32i	a9, a1, 176
+400e2258:	312182        	l32i	a8, a1, 196
+400e225b:	3199      	s32i.n	a9, a1, 12
+400e225d:	2189      	s32i.n	a8, a1, 8
+400e225f:	302192        	l32i	a9, a1, 192
+400e2262:	2f2182        	l32i	a8, a1, 188
+400e2265:	2e21f2        	l32i	a15, a1, 184
+400e2268:	2d21e2        	l32i	a14, a1, 180
+400e226b:	3321c2        	l32i	a12, a1, 204
+400e226e:	3221b2        	l32i	a11, a1, 200
+400e2271:	1199      	s32i.n	a9, a1, 4
+400e2273:	0189      	s32i.n	a8, a1, 0
+400e2275:	7139      	s32i.n	a3, a1, 28
+400e2277:	6149      	s32i.n	a4, a1, 24
+400e2279:	202f25        	call8	4010256c <esp_nn_avg_pool_s8_ansi>
+400e227c:	282192        	l32i	a9, a1, 160
+400e227f:	779a      	add.n	a7, a7, a9
+400e2281:	292182        	l32i	a8, a1, 164
+400e2284:	668a      	add.n	a6, a6, a8
+400e2286:	b39257        	bne	a2, a5, 400e223d <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x1f5>
+400e2289:	00c8c6        	j	400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e228c:	022492        	l32i	a9, a4, 8
+400e228f:	20b770        	or	a11, a7, a7
+400e2292:	4cc1a2        	addi	a10, a1, 76
+400e2295:	1488      	l32i.n	a8, a4, 4
+400e2297:	436192        	s32i	a9, a1, 0x10c
+400e229a:	446182        	s32i	a8, a1, 0x110
+400e229d:	4498      	l32i.n	a9, a4, 16
+400e229f:	029582        	l16si	a8, a5, 4
+400e22a2:	3448      	l32i.n	a4, a4, 12
+400e22a4:	476192        	s32i	a9, a1, 0x11c
+400e22a7:	456182        	s32i	a8, a1, 0x114
+400e22aa:	009592        	l16si	a9, a5, 0
+400e22ad:	4588      	l32i.n	a8, a5, 16
+400e22af:	5558      	l32i.n	a5, a5, 20
+400e22b1:	466192        	s32i	a9, a1, 0x118
+400e22b4:	486142        	s32i	a4, a1, 0x120
+400e22b7:	326182        	s32i	a8, a1, 200
+400e22ba:	336152        	s32i	a5, a1, 204
+400e22bd:	038ca5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e22c0:	06bd      	mov.n	a11, a6
+400e22c2:	30c1a2        	addi	a10, a1, 48
+400e22c5:	0798      	l32i.n	a9, a7, 0
+400e22c7:	496192        	s32i	a9, a1, 0x124
+400e22ca:	038be5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e22cd:	d7f616        	beqz	a6, 400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e22d0:	0668      	l32i.n	a6, a6, 0
+400e22d2:	332152        	l32i	a5, a1, 204
+400e22d5:	322182        	l32i	a8, a1, 200
+400e22d8:	4a6162        	s32i	a6, a1, 0x128
+400e22db:	02a587        	bge	a5, a8, 400e22e1 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x299>
+400e22de:	ff5b86        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e22e1:	132182        	l32i	a8, a1, 76
+400e22e4:	024826        	beqi	a8, 4, 400e22ea <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x2a2>
+400e22e7:	ff5946        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e22ea:	c188      	l32i.n	a8, a1, 48
+400e22ec:	024826        	beqi	a8, 4, 400e22f2 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x2aa>
+400e22ef:	ff5746        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e22f2:	142192        	l32i	a9, a1, 80
+400e22f5:	d188      	l32i.n	a8, a1, 52
+400e22f7:	3f6192        	s32i	a9, a1, 252
+400e22fa:	021897        	beq	a8, a9, 400e2300 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x2b8>
+400e22fd:	ff53c6        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e2300:	1721a2        	l32i	a10, a1, 92
+400e2303:	1021b2        	l32i	a11, a1, 64
+400e2306:	2f61a2        	s32i	a10, a1, 188
+400e2309:	3761b2        	s32i	a11, a1, 220
+400e230c:	021ba7        	beq	a11, a10, 400e2312 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x2ca>
+400e230f:	ff4f46        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e2312:	09ad      	mov.n	a10, a9
+400e2314:	e188      	l32i.n	a8, a1, 56
+400e2316:	f198      	l32i.n	a9, a1, 60
+400e2318:	3d6182        	s32i	a8, a1, 244
+400e231b:	366192        	s32i	a9, a1, 216
+400e231e:	152142        	l32i	a4, a1, 84
+400e2321:	162152        	l32i	a5, a1, 88
+400e2324:	021ae6        	bgei	a10, 1, 400e232a <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x2e2>
+400e2327:	00a146        	j	400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e232a:	828890        	mull	a8, a8, a9
+400e232d:	0a0c      	movi.n	a10, 0
+400e232f:	043d      	mov.n	a3, a4
+400e2331:	2f21b2        	l32i	a11, a1, 188
+400e2334:	054d      	mov.n	a4, a5
+400e2336:	829b50        	mull	a9, a11, a5
+400e2339:	3721b2        	l32i	a11, a1, 220
+400e233c:	8288b0        	mull	a8, a8, a11
+400e233f:	4d6182        	s32i	a8, a1, 0x134
+400e2342:	362182        	l32i	a8, a1, 216
+400e2345:	8288b0        	mull	a8, a8, a11
+400e2348:	4c6182        	s32i	a8, a1, 0x130
+400e234b:	899a      	add.n	a8, a9, a9
+400e234d:	2f2192        	l32i	a9, a1, 188
+400e2350:	286182        	s32i	a8, a1, 160
+400e2353:	899a      	add.n	a8, a9, a9
+400e2355:	085d      	mov.n	a5, a8
+400e2357:	3461a2        	s32i	a10, a1, 208
+400e235a:	4261a2        	s32i	a10, a1, 0x108
+400e235d:	3c61a2        	s32i	a10, a1, 240
+400e2360:	008346        	j	400e2571 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x529>
+400e2363:	00          	.byte	00
+400e2364:	3821a2        	l32i	a10, a1, 224
+400e2367:	0b0c      	movi.n	a11, 0
+400e2369:	53fab0        	max	a15, a10, a11
+400e236c:	4b2192        	l32i	a9, a1, 0x12c
+400e236f:	2a21a2        	l32i	a10, a1, 168
+400e2372:	89aa      	add.n	a8, a9, a10
+400e2374:	88fa      	add.n	a8, a8, a15
+400e2376:	828850        	mull	a8, a8, a5
+400e2379:	3821b2        	l32i	a11, a1, 224
+400e237c:	63ba      	add.n	a6, a3, a11
+400e237e:	482192        	l32i	a9, a1, 0x120
+400e2381:	436690        	min	a6, a6, a9
+400e2384:	c076f0        	sub	a7, a6, a15
+400e2387:	4021a2        	l32i	a10, a1, 0x100
+400e238a:	4a21b2        	l32i	a11, a1, 0x128
+400e238d:	90aab0        	addx2	a10, a10, a11
+400e2390:	492192        	l32i	a9, a1, 0x124
+400e2393:	898a      	add.n	a8, a9, a8
+400e2395:	2b61a2        	s32i	a10, a1, 172
+400e2398:	0a0c      	movi.n	a10, 0
+400e239a:	2c6182        	s32i	a8, a1, 176
+400e239d:	2d61a2        	s32i	a10, a1, 180
+400e23a0:	2e21b2        	l32i	a11, a1, 184
+400e23a3:	312182        	l32i	a8, a1, 196
+400e23a6:	022b87        	blt	a11, a8, 400e23ac <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x364>
+400e23a9:	0080c6        	j	400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e23ac:	080c      	movi.n	a8, 0
+400e23ae:	08dd      	mov.n	a13, a8
+400e23b0:	302192        	l32i	a9, a1, 192
+400e23b3:	cb9a      	add.n	a12, a11, a9
+400e23b5:	2c21e2        	l32i	a14, a1, 176
+400e23b8:	001c46        	j	400e242d <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3e5>
+400e23bb:	00          	.byte	00
+400e23bc:	31bfc0        	srai	a11, a12, 31
+400e23bf:	bb1b      	addi.n	a11, a11, 1
+400e23c1:	190c      	movi.n	a9, 1
+400e23c3:	012c47        	blt	a12, a4, 400e23c8 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x380>
+400e23c6:	090c      	movi.n	a9, 0
+400e23c8:	20a4c0        	or	a10, a4, a12
+400e23cb:	109b90        	and	a9, a11, a9
+400e23ce:	9aac      	beqz.n	a10, 400e23fb <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3b3>
+400e23d0:	c7c916        	beqz	a9, 400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e23d3:	2a21a2        	l32i	a10, a1, 168
+400e23d6:	d7da      	add.n	a13, a7, a13
+400e23d8:	9afa      	add.n	a9, a10, a15
+400e23da:	0ebd      	mov.n	a11, a14
+400e23dc:	07ad      	mov.n	a10, a7
+400e23de:	168a76        	loop	a10, 400e23f8 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3b0>
+400e23e1:	202390        	or	a2, a3, a9
+400e23e4:	728c      	beqz.n	a2, 400e23ef <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3a7>
+400e23e6:	c66996        	bltz	a9, 400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e23e9:	022937        	blt	a9, a3, 400e23ef <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3a7>
+400e23ec:	ff1806        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e23ef:	009b22        	l16si	a2, a11, 0
+400e23f2:	991b      	addi.n	a9, a9, 1
+400e23f4:	882a      	add.n	a8, a8, a2
+400e23f6:	bb5a      	add.n	a11, a11, a5
+400e23f8:	000906        	j	400e2420 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3d8>
+400e23fb:	2a21b2        	l32i	a11, a1, 168
+400e23fe:	d7da      	add.n	a13, a7, a13
+400e2400:	9bfa      	add.n	a9, a11, a15
+400e2402:	07ad      	mov.n	a10, a7
+400e2404:	0ebd      	mov.n	a11, a14
+400e2406:	168a76        	loop	a10, 400e2420 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3d8>
+400e2409:	202390        	or	a2, a3, a9
+400e240c:	728c      	beqz.n	a2, 400e2417 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3cf>
+400e240e:	c3e996        	bltz	a9, 400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e2411:	022937        	blt	a9, a3, 400e2417 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3cf>
+400e2414:	ff0e06        	j	400e2050 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e2417:	009b22        	l16si	a2, a11, 0
+400e241a:	991b      	addi.n	a9, a9, 1
+400e241c:	882a      	add.n	a8, a8, a2
+400e241e:	bb5a      	add.n	a11, a11, a5
+400e2420:	282192        	l32i	a9, a1, 160
+400e2423:	cc1b      	addi.n	a12, a12, 1
+400e2425:	ee9a      	add.n	a14, a14, a9
+400e2427:	2921a2        	l32i	a10, a1, 164
+400e242a:	061ca7        	beq	a12, a10, 400e2434 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3ec>
+400e242d:	8b2f67        	blt	a15, a6, 400e23bc <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x374>
+400e2430:	fffb06        	j	400e2420 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x3d8>
+400e2433:	00          	.byte	00
+400e2434:	178d16        	beqz	a13, 400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e2437:	059fd0        	extui	a9, a13, 31, 1
+400e243a:	99da      	add.n	a9, a9, a13
+400e243c:	219190        	srai	a9, a9, 1
+400e243f:	0918a6        	blti	a8, 1, 400e244c <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x404>
+400e2442:	998a      	add.n	a9, a9, a8
+400e2444:	d289d0        	quos	a8, a9, a13
+400e2447:	0001c6        	j	400e2452 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x40a>
+400e244a:	00          	.byte	00
+400e244b:	00          	.byte	00
+400e244c:	c08890        	sub	a8, a8, a9
+400e244f:	d288d0        	quos	a8, a8, a13
+400e2452:	322192        	l32i	a9, a1, 200
+400e2455:	538890        	max	a8, a8, a9
+400e2458:	332192        	l32i	a9, a1, 204
+400e245b:	438890        	min	a8, a8, a9
+400e245e:	2b21a2        	l32i	a10, a1, 172
+400e2461:	2d21b2        	l32i	a11, a1, 180
+400e2464:	bb1b      	addi.n	a11, a11, 1
+400e2466:	005a82        	s16i	a8, a10, 0
+400e2469:	0020c0        	memw
+400e246c:	aa2b      	addi.n	a10, a10, 2
+400e246e:	2c2182        	l32i	a8, a1, 176
+400e2471:	882b      	addi.n	a8, a8, 2
+400e2473:	2f2192        	l32i	a9, a1, 188
+400e2476:	2d61b2        	s32i	a11, a1, 180
+400e2479:	2b61a2        	s32i	a10, a1, 172
+400e247c:	2c6182        	s32i	a8, a1, 176
+400e247f:	021b97        	beq	a11, a9, 400e2485 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x43d>
+400e2482:	ffc686        	j	400e23a0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x358>
+400e2485:	4021b2        	l32i	a11, a1, 0x100
+400e2488:	372182        	l32i	a8, a1, 220
+400e248b:	bb8a      	add.n	a11, a11, a8
+400e248d:	2a2192        	l32i	a9, a1, 168
+400e2490:	442182        	l32i	a8, a1, 0x110
+400e2493:	998a      	add.n	a9, a9, a8
+400e2495:	3e21a2        	l32i	a10, a1, 248
+400e2498:	aa1b      	addi.n	a10, a10, 1
+400e249a:	2a6192        	s32i	a9, a1, 168
+400e249d:	382192        	l32i	a9, a1, 224
+400e24a0:	c09980        	sub	a9, a9, a8
+400e24a3:	4061b2        	s32i	a11, a1, 0x100
+400e24a6:	3621b2        	l32i	a11, a1, 216
+400e24a9:	3e61a2        	s32i	a10, a1, 248
+400e24ac:	386192        	s32i	a9, a1, 224
+400e24af:	0d1ba7        	beq	a11, a10, 400e24c0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x478>
+400e24b2:	2f2182        	l32i	a8, a1, 188
+400e24b5:	0218a6        	blti	a8, 1, 400e24bb <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x473>
+400e24b8:	ffaa06        	j	400e2364 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x31c>
+400e24bb:	fff186        	j	400e2485 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x43d>
+400e24be:	00          	.byte	00
+400e24bf:	00          	.byte	00
+400e24c0:	352192        	l32i	a9, a1, 212
+400e24c3:	991b      	addi.n	a9, a9, 1
+400e24c5:	4121a2        	l32i	a10, a1, 0x104
+400e24c8:	4c21b2        	l32i	a11, a1, 0x130
+400e24cb:	aaba      	add.n	a10, a10, a11
+400e24cd:	392182        	l32i	a8, a1, 228
+400e24d0:	356192        	s32i	a9, a1, 212
+400e24d3:	432192        	l32i	a9, a1, 0x10c
+400e24d6:	c08890        	sub	a8, a8, a9
+400e24d9:	4161a2        	s32i	a10, a1, 0x104
+400e24dc:	3021a2        	l32i	a10, a1, 192
+400e24df:	aa9a      	add.n	a10, a10, a9
+400e24e1:	396182        	s32i	a8, a1, 228
+400e24e4:	3d21b2        	l32i	a11, a1, 244
+400e24e7:	352182        	l32i	a8, a1, 212
+400e24ea:	3061a2        	s32i	a10, a1, 192
+400e24ed:	591b87        	beq	a11, a8, 400e254a <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x502>
+400e24f0:	362192        	l32i	a9, a1, 216
+400e24f3:	c919a6        	blti	a9, 1, 400e24c0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x478>
+400e24f6:	0b0c      	movi.n	a11, 0
+400e24f8:	3921a2        	l32i	a10, a1, 228
+400e24fb:	53aab0        	max	a10, a10, a11
+400e24fe:	392182        	l32i	a8, a1, 228
+400e2501:	984a      	add.n	a9, a8, a4
+400e2503:	3421b2        	l32i	a11, a1, 208
+400e2506:	2e61a2        	s32i	a10, a1, 184
+400e2509:	3021a2        	l32i	a10, a1, 192
+400e250c:	8aba      	add.n	a8, a10, a11
+400e250e:	2e21b2        	l32i	a11, a1, 184
+400e2511:	88ba      	add.n	a8, a8, a11
+400e2513:	828830        	mull	a8, a8, a3
+400e2516:	0b0c      	movi.n	a11, 0
+400e2518:	4721a2        	l32i	a10, a1, 0x11c
+400e251b:	4399a0        	min	a9, a9, a10
+400e251e:	4b6182        	s32i	a8, a1, 0x12c
+400e2521:	462182        	l32i	a8, a1, 0x118
+400e2524:	316192        	s32i	a9, a1, 196
+400e2527:	609080        	neg	a9, a8
+400e252a:	386182        	s32i	a8, a1, 224
+400e252d:	2a6192        	s32i	a9, a1, 168
+400e2530:	312182        	l32i	a8, a1, 196
+400e2533:	302192        	l32i	a9, a1, 192
+400e2536:	889a      	add.n	a8, a8, a9
+400e2538:	4121a2        	l32i	a10, a1, 0x104
+400e253b:	3e61b2        	s32i	a11, a1, 248
+400e253e:	4061a2        	s32i	a10, a1, 0x100
+400e2541:	296182        	s32i	a8, a1, 164
+400e2544:	ffda86        	j	400e24b2 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x46a>
+400e2547:	00          	.byte	00
+400e2548:	00          	.byte	00
+400e2549:	00          	.byte	00
+400e254a:	038d      	mov.n	a8, a3
+400e254c:	043d      	mov.n	a3, a4
+400e254e:	084d      	mov.n	a4, a8
+400e2550:	4221b2        	l32i	a11, a1, 0x108
+400e2553:	4d2182        	l32i	a8, a1, 0x134
+400e2556:	bb8a      	add.n	a11, a11, a8
+400e2558:	3c21a2        	l32i	a10, a1, 240
+400e255b:	aa1b      	addi.n	a10, a10, 1
+400e255d:	342192        	l32i	a9, a1, 208
+400e2560:	993a      	add.n	a9, a9, a3
+400e2562:	4261b2        	s32i	a11, a1, 0x108
+400e2565:	3f21b2        	l32i	a11, a1, 252
+400e2568:	3c61a2        	s32i	a10, a1, 240
+400e256b:	346192        	s32i	a9, a1, 208
+400e256e:	3e1ab7        	beq	a10, a11, 400e25b0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x568>
+400e2571:	3d2182        	l32i	a8, a1, 244
+400e2574:	d818a6        	blti	a8, 1, 400e2550 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x508>
+400e2577:	090c      	movi.n	a9, 0
+400e2579:	452182        	l32i	a8, a1, 0x114
+400e257c:	4221a2        	l32i	a10, a1, 0x108
+400e257f:	356192        	s32i	a9, a1, 212
+400e2582:	609080        	neg	a9, a8
+400e2585:	396182        	s32i	a8, a1, 228
+400e2588:	048d      	mov.n	a8, a4
+400e258a:	034d      	mov.n	a4, a3
+400e258c:	083d      	mov.n	a3, a8
+400e258e:	306192        	s32i	a9, a1, 192
+400e2591:	4161a2        	s32i	a10, a1, 0x104
+400e2594:	ffd606        	j	400e24f0 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e2597:	00          	.byte	00
+400e2598:	08ad      	mov.n	a10, a8
+400e259a:	5278      	l32i.n	a7, a2, 20
+400e259c:	015d25        	call8	400e3b70 <TfLiteTypeGetName>
+400e259f:	0acd      	mov.n	a12, a10
+400e25a1:	02ad      	mov.n	a10, a2
+400e25a3:	01a022        	movi	a2, 1
+400e25a6:	ba13b1        	l32r	a11, 400d0df4 <_stext+0xdd4> (3f406a08 <_flash_rodata_start+0x68e8>)
+400e25a9:	0007e0        	callx8	a7
+400e25ac:	000e06        	j	400e25e8 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x5a0>
+400e25af:	00          	.byte	00
+400e25b0:	a09f25        	call8	40082fa4 <esp_timer_get_time>
+400e25b3:	209bb0        	or	a9, a11, a11
+400e25b6:	3a21b2        	l32i	a11, a1, 232
+400e25b9:	01a0c2        	movi	a12, 1
+400e25bc:	c08ab0        	sub	a8, a10, a11
+400e25bf:	b8d2b1        	l32r	a11, 400d0908 <_stext+0x8e8> (3ffbb6a0 <pooling_total_time>)
+400e25c2:	023a87        	bltu	a10, a8, 400e25c8 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x580>
+400e25c5:	00a0c2        	movi	a12, 0
+400e25c8:	3b21a2        	l32i	a10, a1, 236
+400e25cb:	c099a0        	sub	a9, a9, a10
+400e25ce:	c099c0        	sub	a9, a9, a12
+400e25d1:	1a0c      	movi.n	a10, 1
+400e25d3:	0bd8      	l32i.n	a13, a11, 0
+400e25d5:	8d8a      	add.n	a8, a13, a8
+400e25d7:	1bc8      	l32i.n	a12, a11, 4
+400e25d9:	0138d7        	bltu	a8, a13, 400e25de <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x596>
+400e25dc:	0a0c      	movi.n	a10, 0
+400e25de:	9c9a      	add.n	a9, a12, a9
+400e25e0:	aa9a      	add.n	a10, a10, a9
+400e25e2:	0b89      	s32i.n	a8, a11, 0
+400e25e4:	020c      	movi.n	a2, 0
+400e25e6:	1ba9      	s32i.n	a10, a11, 4
+400e25e8:	0020c0        	memw
+400e25eb:	f01d      	retw.n
+400e25ed:	000000        	ill

@@ -1,0 +1,471 @@
+400e159c <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode>:
+400e159c:	03e136        	entry	a1, 0x1f0
+400e159f:	042352        	l32i	a5, a3, 16
+400e15a2:	15cc      	bnez.n	a5, 400e15a7 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0xb>
+400e15a4:	ad60e5        	call8	4008ebb4 <abort>
+400e15a7:	bdfe81        	l32r	a8, 400d0da0 <_stext+0xd80> (3f428284 <_ZN6tflite26kFullyConnectedInputTensorE>)
+400e15aa:	03bd      	mov.n	a11, a3
+400e15ac:	02ad      	mov.n	a10, a2
+400e15ae:	08c8      	l32i.n	a12, a8, 0
+400e15b0:	045765        	call8	400e5b28 <_ZN6tflite5micro12GetEvalInputEPK13TfLiteContextPK10TfLiteNodei>
+400e15b3:	03bd      	mov.n	a11, a3
+400e15b5:	0a7d      	mov.n	a7, a10
+400e15b7:	bdfe81        	l32r	a8, 400d0db0 <_stext+0xd90> (3f428280 <_ZN6tflite28kFullyConnectedWeightsTensorE>)
+400e15ba:	02ad      	mov.n	a10, a2
+400e15bc:	08c8      	l32i.n	a12, a8, 0
+400e15be:	0456a5        	call8	400e5b28 <_ZN6tflite5micro12GetEvalInputEPK13TfLiteContextPK10TfLiteNodei>
+400e15c1:	0a4d      	mov.n	a4, a10
+400e15c3:	03bd      	mov.n	a11, a3
+400e15c5:	bdfc81        	l32r	a8, 400d0db8 <_stext+0xd98> (3f42827c <_ZN6tflite25kFullyConnectedBiasTensorE>)
+400e15c8:	02ad      	mov.n	a10, a2
+400e15ca:	08c8      	l32i.n	a12, a8, 0
+400e15cc:	656142        	s32i	a4, a1, 0x194
+400e15cf:	0455a5        	call8	400e5b28 <_ZN6tflite5micro12GetEvalInputEPK13TfLiteContextPK10TfLiteNodei>
+400e15d2:	0a8d      	mov.n	a8, a10
+400e15d4:	03bd      	mov.n	a11, a3
+400e15d6:	02ad      	mov.n	a10, a2
+400e15d8:	646182        	s32i	a8, a1, 0x190
+400e15db:	bdf881        	l32r	a8, 400d0dbc <_stext+0xd9c> (3f428278 <_ZN6tflite27kFullyConnectedOutputTensorE>)
+400e15de:	08c8      	l32i.n	a12, a8, 0
+400e15e0:	045825        	call8	400e5b64 <_ZN6tflite5micro13GetEvalOutputEPK13TfLiteContextPK10TfLiteNodei>
+400e15e3:	0a6d      	mov.n	a6, a10
+400e15e5:	3348      	l32i.n	a4, a3, 12
+400e15e7:	fb9416        	beqz	a4, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e15ea:	a19ba5        	call8	40082fa4 <esp_timer_get_time>
+400e15ed:	2798      	l32i.n	a9, a7, 8
+400e15ef:	7161a2        	s32i	a10, a1, 0x1c4
+400e15f2:	7261b2        	s32i	a11, a1, 0x1c8
+400e15f5:	023966        	bnei	a9, 3, 400e15fb <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x5f>
+400e15f8:	009646        	j	400e1855 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x2b9>
+400e15fb:	9a0c      	movi.n	a10, 9
+400e15fd:	0299a7        	bne	a9, a10, 400e1603 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x67>
+400e1600:	006146        	j	400e1789 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x1ed>
+400e1603:	021926        	beqi	a9, 1, 400e1609 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x6d>
+400e1606:	010786        	j	400e1a28 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x48c>
+400e1609:	05b8      	l32i.n	a11, a5, 0
+400e160b:	48c1a2        	addi	a10, a1, 72
+400e160e:	20c132        	addi	a3, a1, 32
+400e1611:	01d352        	addmi	a5, a3, 0x100
+400e1614:	736192        	s32i	a9, a1, 0x1cc
+400e1617:	044765        	call8	400e5a8c <_ZN6tflite25FullyConnectedParamsFloatE21TfLiteFusedActivation>
+400e161a:	07bd      	mov.n	a11, a7
+400e161c:	4cc5a2        	addi	a10, a5, 76
+400e161f:	0456a5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1622:	0788      	l32i.n	a8, a7, 0
+400e1624:	30c5a2        	addi	a10, a5, 48
+400e1627:	6521b2        	l32i	a11, a1, 0x194
+400e162a:	686182        	s32i	a8, a1, 0x1a0
+400e162d:	0455a5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1630:	652182        	l32i	a8, a1, 0x194
+400e1633:	f6d816        	beqz	a8, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1636:	14c5a2        	addi	a10, a5, 20
+400e1639:	6421b2        	l32i	a11, a1, 0x190
+400e163c:	0878      	l32i.n	a7, a8, 0
+400e163e:	0454a5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1641:	642182        	l32i	a8, a1, 0x190
+400e1644:	f5c816        	beqz	a8, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1647:	18a1a2        	movi	a10, 0x118
+400e164a:	06bd      	mov.n	a11, a6
+400e164c:	80aa10        	add	a10, a10, a1
+400e164f:	002842        	l32i	a4, a8, 0
+400e1652:	045365        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1655:	732192        	l32i	a9, a1, 0x1cc
+400e1658:	f48616        	beqz	a6, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e165b:	4621b2        	l32i	a11, a1, 0x118
+400e165e:	ab0b      	addi.n	a10, a11, -1
+400e1660:	0668      	l32i.n	a6, a6, 0
+400e1662:	696162        	s32i	a6, a1, 0x1a4
+400e1665:	190133        	lsi	f3, a1, 100
+400e1668:	1a0143        	lsi	f4, a1, 104
+400e166b:	4c23c2        	l32i	a12, a3, 0x130
+400e166e:	f32a96        	bltz	a10, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1671:	18a1d2        	movi	a13, 0x118
+400e1674:	dd1a      	add.n	a13, a13, a1
+400e1676:	00a082        	movi	a8, 0
+400e1679:	666192        	s32i	a9, a1, 0x198
+400e167c:	0e1a87        	beq	a10, a8, 400e168e <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0xf2>
+400e167f:	881b      	addi.n	a8, a8, 1
+400e1681:	dd4b      	addi.n	a13, a13, 4
+400e1683:	0de8      	l32i.n	a14, a13, 0
+400e1685:	8299e0        	mull	a9, a9, a14
+400e1688:	f09b87        	bne	a11, a8, 400e167c <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0xe0>
+400e168b:	000186        	j	400e1695 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0xf9>
+400e168e:	8a1b      	addi.n	a8, a10, 1
+400e1690:	dd4b      	addi.n	a13, a13, 4
+400e1692:	e69b87        	bne	a11, a8, 400e167c <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0xe0>
+400e1695:	666192        	s32i	a9, a1, 0x198
+400e1698:	fecc82        	addi	a8, a12, -2
+400e169b:	f05896        	bltz	a8, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e169e:	01d392        	addmi	a9, a3, 0x100
+400e16a1:	a0aa30        	addx4	a10, a10, a3
+400e16a4:	3f2aa2        	l32i	a10, a10, 252
+400e16a7:	a08890        	addx4	a8, a8, a9
+400e16aa:	d888      	l32i.n	a8, a8, 52
+400e16ac:	6761a2        	s32i	a10, a1, 0x19c
+400e16af:	021a87        	beq	a10, a8, 400e16b5 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x119>
+400e16b2:	ffbb86        	j	400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e16b5:	8c0b      	addi.n	a8, a12, -1
+400e16b7:	6621a2        	l32i	a10, a1, 0x198
+400e16ba:	021ae6        	bgei	a10, 1, 400e16c0 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x124>
+400e16bd:	00e0c6        	j	400e1a44 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e16c0:	6721a2        	l32i	a10, a1, 0x19c
+400e16c3:	021ae6        	bgei	a10, 1, 400e16c9 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x12d>
+400e16c6:	00de86        	j	400e1a44 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e16c9:	a08890        	addx4	a8, a8, a9
+400e16cc:	020c      	movi.n	a2, 0
+400e16ce:	d8e8      	l32i.n	a14, a8, 52
+400e16d0:	118ae0        	slli	a8, a10, 2
+400e16d3:	0f0c      	movi.n	a15, 0
+400e16d5:	692192        	l32i	a9, a1, 0x1a4
+400e16d8:	a05a90        	addx4	a5, a10, a9
+400e16db:	11aee0        	slli	a10, a14, 2
+400e16de:	6b6182        	s32i	a8, a1, 0x1ac
+400e16e1:	682182        	l32i	a8, a1, 0x1a0
+400e16e4:	a03e80        	addx4	a3, a14, a8
+400e16e7:	6a61a2        	s32i	a10, a1, 0x1a8
+400e16ea:	656122        	s32i	a2, a1, 0x194
+400e16ed:	646122        	s32i	a2, a1, 0x190
+400e16f0:	001fc6        	j	400e1773 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x1d7>
+400e16f3:	c08360        	sub	a8, a3, a6
+400e16f6:	fcc882        	addi	a8, a8, -4
+400e16f9:	418280        	srli	a8, a8, 2
+400e16fc:	a0ac70        	addx4	a10, a12, a7
+400e16ff:	069d      	mov.n	a9, a6
+400e1701:	fa0f50        	wfr	f0, a15
+400e1704:	881b      	addi.n	a8, a8, 1
+400e1706:	0c8876        	loop	a8, 400e1716 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x17a>
+400e1709:	000923        	lsi	f2, a9, 0
+400e170c:	994b      	addi.n	a9, a9, 4
+400e170e:	000a13        	lsi	f1, a10, 0
+400e1711:	aa4b      	addi.n	a10, a10, 4
+400e1713:	4a0210        	madd.s	f0, f2, f1
+400e1716:	fa1f50        	wfr	f1, a15
+400e1719:	148c      	beqz.n	a4, 400e171e <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x182>
+400e171b:	000d13        	lsi	f1, a13, 0
+400e171e:	0a0100        	add.s	f0, f1, f0
+400e1721:	4b0030        	olt.s	b0, f0, f3
+400e1724:	020076        	bf	b0, 400e172a <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x18e>
+400e1727:	fa0300        	mov.s	f0, f3
+400e172a:	4b0400        	olt.s	b0, f4, f0
+400e172d:	020076        	bf	b0, 400e1733 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x197>
+400e1730:	fa0400        	mov.s	f0, f4
+400e1733:	004b03        	ssi	f0, a11, 0
+400e1736:	bb4b      	addi.n	a11, a11, 4
+400e1738:	dd4b      	addi.n	a13, a13, 4
+400e173a:	ccea      	add.n	a12, a12, a14
+400e173c:	0815b7        	beq	a5, a11, 400e1748 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x1ac>
+400e173f:	fa0f50        	wfr	f0, a15
+400e1742:	d01ea6        	blti	a14, 1, 400e1716 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x17a>
+400e1745:	ffea86        	j	400e16f3 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x157>
+400e1748:	642192        	l32i	a9, a1, 0x190
+400e174b:	22ea      	add.n	a2, a2, a14
+400e174d:	991b      	addi.n	a9, a9, 1
+400e174f:	652182        	l32i	a8, a1, 0x194
+400e1752:	646192        	s32i	a9, a1, 0x190
+400e1755:	672192        	l32i	a9, a1, 0x19c
+400e1758:	889a      	add.n	a8, a8, a9
+400e175a:	6b21a2        	l32i	a10, a1, 0x1ac
+400e175d:	55aa      	add.n	a5, a5, a10
+400e175f:	656182        	s32i	a8, a1, 0x194
+400e1762:	6a21a2        	l32i	a10, a1, 0x1a8
+400e1765:	33aa      	add.n	a3, a3, a10
+400e1767:	662182        	l32i	a8, a1, 0x198
+400e176a:	642192        	l32i	a9, a1, 0x190
+400e176d:	029897        	bne	a8, a9, 400e1773 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x1d7>
+400e1770:	00b406        	j	400e1a44 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e1773:	04dd      	mov.n	a13, a4
+400e1775:	0c0c      	movi.n	a12, 0
+400e1777:	6521a2        	l32i	a10, a1, 0x194
+400e177a:	692182        	l32i	a8, a1, 0x1a4
+400e177d:	a0ba80        	addx4	a11, a10, a8
+400e1780:	682192        	l32i	a9, a1, 0x1a0
+400e1783:	a06290        	addx4	a6, a2, a9
+400e1786:	ffed46        	j	400e173f <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x1a3>
+400e1789:	642182        	l32i	a8, a1, 0x190
+400e178c:	388c      	beqz.n	a8, 400e1793 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x1f7>
+400e178e:	0898      	l32i.n	a9, a8, 0
+400e1790:	646192        	s32i	a9, a1, 0x190
+400e1793:	fca0a2        	movi	a10, 252
+400e1796:	aa1a      	add.n	a10, a10, a1
+400e1798:	6521b2        	l32i	a11, a1, 0x194
+400e179b:	043ee5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e179e:	20c182        	addi	a8, a1, 32
+400e17a1:	c0a0a2        	movi	a10, 192
+400e17a4:	a8aa      	add.n	a10, a8, a10
+400e17a6:	20b660        	or	a11, a6, a6
+400e17a9:	043de5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e17ac:	3821a2        	l32i	a10, a1, 224
+400e17af:	3f2192        	l32i	a9, a1, 252
+400e17b2:	021ae6        	bgei	a10, 1, 400e17b8 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x21c>
+400e17b5:	ff7ac6        	j	400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e17b8:	392182        	l32i	a8, a1, 228
+400e17bb:	666182        	s32i	a8, a1, 0x198
+400e17be:	021a66        	bnei	a10, 1, 400e17c4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x228>
+400e17c1:	ff77c6        	j	400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e17c4:	fec9a2        	addi	a10, a9, -2
+400e17c7:	3a2152        	l32i	a5, a1, 232
+400e17ca:	dd6a96        	bltz	a10, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e17cd:	fca082        	movi	a8, 252
+400e17d0:	881a      	add.n	a8, a8, a1
+400e17d2:	a0aa80        	addx4	a10, a10, a8
+400e17d5:	1aa8      	l32i.n	a10, a10, 4
+400e17d7:	02aa57        	bge	a10, a5, 400e17dd <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x241>
+400e17da:	ff7186        	j	400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e17dd:	990b      	addi.n	a9, a9, -1
+400e17df:	a09980        	addx4	a9, a9, a8
+400e17e2:	1938      	l32i.n	a3, a9, 4
+400e17e4:	0728      	l32i.n	a2, a7, 0
+400e17e6:	dba616        	beqz	a6, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e17e9:	652192        	l32i	a9, a1, 0x194
+400e17ec:	0668      	l32i.n	a6, a6, 0
+400e17ee:	db2916        	beqz	a9, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e17f1:	f48030        	extui	a8, a3, 0, 16
+400e17f4:	f49050        	extui	a9, a5, 0, 16
+400e17f7:	070c      	movi.n	a7, 0
+400e17f9:	676182        	s32i	a8, a1, 0x19c
+400e17fc:	652182        	l32i	a8, a1, 0x194
+400e17ff:	0888      	l32i.n	a8, a8, 0
+400e1801:	686192        	s32i	a9, a1, 0x1a0
+400e1804:	662192        	l32i	a9, a1, 0x198
+400e1807:	656182        	s32i	a8, a1, 0x194
+400e180a:	0219e6        	bgei	a9, 1, 400e1810 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x274>
+400e180d:	008cc6        	j	400e1a44 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e1810:	20a220        	or	a10, a2, a2
+400e1813:	01c772        	addi	a7, a7, 1
+400e1816:	802230        	add	a2, a2, a3
+400e1819:	3498      	l32i.n	a9, a4, 12
+400e181b:	64e8      	l32i.n	a14, a4, 24
+400e181d:	60e0e0        	neg	a14, a14
+400e1820:	54b8      	l32i.n	a11, a4, 20
+400e1822:	60b0b0        	neg	a11, a11
+400e1825:	6199      	s32i.n	a9, a1, 24
+400e1827:	2498      	l32i.n	a9, a4, 8
+400e1829:	5199      	s32i.n	a9, a1, 20
+400e182b:	0498      	l32i.n	a9, a4, 0
+400e182d:	4199      	s32i.n	a9, a1, 16
+400e182f:	1498      	l32i.n	a9, a4, 4
+400e1831:	3199      	s32i.n	a9, a1, 12
+400e1833:	7498      	l32i.n	a9, a4, 28
+400e1835:	682182        	l32i	a8, a1, 0x1a0
+400e1838:	6421f2        	l32i	a15, a1, 0x190
+400e183b:	6521d2        	l32i	a13, a1, 0x194
+400e183e:	6721c2        	l32i	a12, a1, 0x19c
+400e1841:	2199      	s32i.n	a9, a1, 8
+400e1843:	0169      	s32i.n	a6, a1, 0
+400e1845:	665a      	add.n	a6, a6, a5
+400e1847:	1189      	s32i.n	a8, a1, 4
+400e1849:	07ce65        	call8	400e9530 <esp_nn_fully_connected_s8_ansi>
+400e184c:	662192        	l32i	a9, a1, 0x198
+400e184f:	bd9977        	bne	a9, a7, 400e1810 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x274>
+400e1852:	007b86        	j	400e1a44 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e1855:	20c132        	addi	a3, a1, 32
+400e1858:	04bd      	mov.n	a11, a4
+400e185a:	20a330        	or	a10, a3, a3
+400e185d:	208fe5        	call8	4010215c <_ZN6tflite29FullyConnectedParamsQuantizedERKNS_20OpDataFullyConnectedE>
+400e1860:	a4a0a2        	movi	a10, 164
+400e1863:	07bd      	mov.n	a11, a7
+400e1865:	a3aa      	add.n	a10, a3, a10
+400e1867:	043225        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e186a:	6521b2        	l32i	a11, a1, 0x194
+400e186d:	88a0a2        	movi	a10, 136
+400e1870:	a3aa      	add.n	a10, a3, a10
+400e1872:	0748      	l32i.n	a4, a7, 0
+400e1874:	043125        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e1877:	652182        	l32i	a8, a1, 0x194
+400e187a:	d26816        	beqz	a8, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e187d:	6cc3a2        	addi	a10, a3, 108
+400e1880:	0898      	l32i.n	a9, a8, 0
+400e1882:	6421b2        	l32i	a11, a1, 0x190
+400e1885:	6d6192        	s32i	a9, a1, 0x1b4
+400e1888:	042fe5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e188b:	642182        	l32i	a8, a1, 0x190
+400e188e:	d12816        	beqz	a8, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e1891:	20b660        	or	a11, a6, a6
+400e1894:	70c1a2        	addi	a10, a1, 112
+400e1897:	002892        	l32i	a9, a8, 0
+400e189a:	676192        	s32i	a9, a1, 0x19c
+400e189d:	042ea5        	call8	400e5b88 <_ZN6tflite5micro14GetTensorShapeEPK16TfLiteEvalTensor>
+400e18a0:	d00616        	beqz	a6, 400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e18a3:	a188      	l32i.n	a8, a1, 40
+400e18a5:	b198      	l32i.n	a9, a1, 44
+400e18a7:	6a6182        	s32i	a8, a1, 0x1a8
+400e18aa:	c188      	l32i.n	a8, a1, 48
+400e18ac:	6b6192        	s32i	a9, a1, 0x1ac
+400e18af:	6c6182        	s32i	a8, a1, 0x1b0
+400e18b2:	d198      	l32i.n	a9, a1, 52
+400e18b4:	e188      	l32i.n	a8, a1, 56
+400e18b6:	2a21d2        	l32i	a13, a1, 168
+400e18b9:	686192        	s32i	a9, a1, 0x1a0
+400e18bc:	696182        	s32i	a8, a1, 0x1a4
+400e18bf:	06f8      	l32i.n	a15, a6, 0
+400e18c1:	8178      	l32i.n	a7, a1, 32
+400e18c3:	9168      	l32i.n	a6, a1, 36
+400e18c5:	022de6        	bgei	a13, 2, 400e18cb <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x32f>
+400e18c8:	ff3606        	j	400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e18cb:	1c21c2        	l32i	a12, a1, 112
+400e18ce:	021ce6        	bgei	a12, 1, 400e18d4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x338>
+400e18d1:	ff33c6        	j	400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e18d4:	02a897        	bge	a8, a9, 400e18da <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x33e>
+400e18d7:	ff3246        	j	400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e18da:	180c      	movi.n	a8, 1
+400e18dc:	6f6182        	s32i	a8, a1, 0x1bc
+400e18df:	bc0b      	addi.n	a11, a12, -1
+400e18e1:	70c192        	addi	a9, a1, 112
+400e18e4:	080c      	movi.n	a8, 0
+400e18e6:	6f21a2        	l32i	a10, a1, 0x1bc
+400e18e9:	0f18b7        	beq	a8, a11, 400e18fc <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x360>
+400e18ec:	881b      	addi.n	a8, a8, 1
+400e18ee:	994b      	addi.n	a9, a9, 4
+400e18f0:	09e8      	l32i.n	a14, a9, 0
+400e18f2:	82aae0        	mull	a10, a10, a14
+400e18f5:	f098c7        	bne	a8, a12, 400e18e9 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x34d>
+400e18f8:	0001c6        	j	400e1903 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x367>
+400e18fb:	00          	.byte	00
+400e18fc:	881b      	addi.n	a8, a8, 1
+400e18fe:	994b      	addi.n	a9, a9, 4
+400e1900:	e59c87        	bne	a12, a8, 400e18e9 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x34d>
+400e1903:	a08d30        	addx4	a8, a13, a3
+400e1906:	212882        	l32i	a8, a8, 132
+400e1909:	a0bb30        	addx4	a11, a11, a3
+400e190c:	706182        	s32i	a8, a1, 0x1c0
+400e190f:	702192        	l32i	a9, a1, 0x1c0
+400e1912:	152b82        	l32i	a8, a11, 84
+400e1915:	6f61a2        	s32i	a10, a1, 0x1bc
+400e1918:	021987        	beq	a9, a8, 400e191e <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x382>
+400e191b:	ff2146        	j	400e15a4 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x8>
+400e191e:	8d0b      	addi.n	a8, a13, -1
+400e1920:	6f2192        	l32i	a9, a1, 0x1bc
+400e1923:	0219e6        	bgei	a9, 1, 400e1929 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x38d>
+400e1926:	004686        	j	400e1a44 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e1929:	702192        	l32i	a9, a1, 0x1c0
+400e192c:	0219e6        	bgei	a9, 1, 400e1932 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x396>
+400e192f:	004446        	j	400e1a44 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e1932:	a08830        	addx4	a8, a8, a3
+400e1935:	090c      	movi.n	a9, 0
+400e1937:	232852        	l32i	a5, a8, 140
+400e193a:	0f3d      	mov.n	a3, a15
+400e193c:	845a      	add.n	a8, a4, a5
+400e193e:	05dd      	mov.n	a13, a5
+400e1940:	656182        	s32i	a8, a1, 0x194
+400e1943:	6e6192        	s32i	a9, a1, 0x1b8
+400e1946:	003146        	j	400e1a0f <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x473>
+400e1949:	0a0c      	movi.n	a10, 0
+400e194b:	0717e6        	bgei	a7, 1, 400e1956 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x3ba>
+400e194e:	001b86        	j	400e19c0 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x424>
+400e1951:	0a0c      	movi.n	a10, 0
+400e1953:	3317a6        	blti	a7, 1, 400e198a <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x3ee>
+400e1956:	07dd      	mov.n	a13, a7
+400e1958:	642172        	l32i	a7, a1, 0x190
+400e195b:	04cd      	mov.n	a12, a4
+400e195d:	0a0c      	movi.n	a10, 0
+400e195f:	6d2182        	l32i	a8, a1, 0x1b4
+400e1962:	f82a      	add.n	a15, a8, a2
+400e1964:	652192        	l32i	a9, a1, 0x194
+400e1967:	c0b940        	sub	a11, a9, a4
+400e196a:	128b76        	loop	a11, 400e1980 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x3e4>
+400e196d:	000f82        	l8ui	a8, a15, 0
+400e1970:	ff1b      	addi.n	a15, a15, 1
+400e1972:	886a      	add.n	a8, a8, a6
+400e1974:	000c92        	l8ui	a9, a12, 0
+400e1977:	cc1b      	addi.n	a12, a12, 1
+400e1979:	997a      	add.n	a9, a9, a7
+400e197b:	828890        	mull	a8, a8, a9
+400e197e:	aa8a      	add.n	a10, a10, a8
+400e1980:	672182        	l32i	a8, a1, 0x19c
+400e1983:	646172        	s32i	a7, a1, 0x190
+400e1986:	0d7d      	mov.n	a7, a13
+400e1988:	48bc      	beqz.n	a8, 400e19c0 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x424>
+400e198a:	227a      	add.n	a2, a2, a7
+400e198c:	0588      	l32i.n	a8, a5, 0
+400e198e:	554b      	addi.n	a5, a5, 4
+400e1990:	80aa80        	add	a10, a10, a8
+400e1993:	6c21c2        	l32i	a12, a1, 0x1b0
+400e1996:	6b21b2        	l32i	a11, a1, 0x1ac
+400e1999:	02a565        	call8	400e43f0 <_ZN6tflite29MultiplyByQuantizedMultiplierElli>
+400e199c:	6a2192        	l32i	a9, a1, 0x1a8
+400e199f:	89aa      	add.n	a8, a9, a10
+400e19a1:	682192        	l32i	a9, a1, 0x1a0
+400e19a4:	538890        	max	a8, a8, a9
+400e19a7:	692192        	l32i	a9, a1, 0x1a4
+400e19aa:	438890        	min	a8, a8, a9
+400e19ad:	004382        	s8i	a8, a3, 0
+400e19b0:	0020c0        	memw
+400e19b3:	331b      	addi.n	a3, a3, 1
+400e19b5:	662182        	l32i	a8, a1, 0x198
+400e19b8:	959387        	bne	a3, a8, 400e1951 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x3b5>
+400e19bb:	000cc6        	j	400e19f2 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x456>
+400e19be:	00          	.byte	00
+400e19bf:	00          	.byte	00
+400e19c0:	6c21c2        	l32i	a12, a1, 0x1b0
+400e19c3:	04c552        	addi	a5, a5, 4
+400e19c6:	802270        	add	a2, a2, a7
+400e19c9:	6b21b2        	l32i	a11, a1, 0x1ac
+400e19cc:	02a225        	call8	400e43f0 <_ZN6tflite29MultiplyByQuantizedMultiplierElli>
+400e19cf:	6a2192        	l32i	a9, a1, 0x1a8
+400e19d2:	8089a0        	add	a8, a9, a10
+400e19d5:	682192        	l32i	a9, a1, 0x1a0
+400e19d8:	538890        	max	a8, a8, a9
+400e19db:	692192        	l32i	a9, a1, 0x1a4
+400e19de:	438890        	min	a8, a8, a9
+400e19e1:	004382        	s8i	a8, a3, 0
+400e19e4:	0020c0        	memw
+400e19e7:	331b      	addi.n	a3, a3, 1
+400e19e9:	662182        	l32i	a8, a1, 0x198
+400e19ec:	021387        	beq	a3, a8, 400e19f2 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x456>
+400e19ef:	ffd586        	j	400e1949 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x3ad>
+400e19f2:	07dd      	mov.n	a13, a7
+400e19f4:	44da      	add.n	a4, a4, a13
+400e19f6:	652182        	l32i	a8, a1, 0x194
+400e19f9:	88da      	add.n	a8, a8, a13
+400e19fb:	6e2192        	l32i	a9, a1, 0x1b8
+400e19fe:	991b      	addi.n	a9, a9, 1
+400e1a00:	656182        	s32i	a8, a1, 0x194
+400e1a03:	6f2182        	l32i	a8, a1, 0x1bc
+400e1a06:	6e6192        	s32i	a9, a1, 0x1b8
+400e1a09:	642172        	l32i	a7, a1, 0x190
+400e1a0c:	341897        	beq	a8, a9, 400e1a44 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4a8>
+400e1a0f:	020c      	movi.n	a2, 0
+400e1a11:	02ad      	mov.n	a10, a2
+400e1a13:	702192        	l32i	a9, a1, 0x1c0
+400e1a16:	993a      	add.n	a9, a9, a3
+400e1a18:	666192        	s32i	a9, a1, 0x198
+400e1a1b:	672152        	l32i	a5, a1, 0x19c
+400e1a1e:	021de6        	bgei	a13, 1, 400e1a24 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x488>
+400e1a21:	ffd6c6        	j	400e1980 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x3e4>
+400e1a24:	ffccc6        	j	400e195b <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x3bf>
+400e1a27:	00          	.byte	00
+400e1a28:	20a990        	or	a10, a9, a9
+400e1a2b:	052262        	l32i	a6, a2, 20
+400e1a2e:	021425        	call8	400e3b70 <TfLiteTypeGetName>
+400e1a31:	20caa0        	or	a12, a10, a10
+400e1a34:	02ad      	mov.n	a10, a2
+400e1a36:	120c      	movi.n	a2, 1
+400e1a38:	27d8      	l32i.n	a13, a7, 8
+400e1a3a:	bce6b1        	l32r	a11, 400d0dd4 <_stext+0xdb4> (3f4065b0 <_flash_rodata_start+0x6490>)
+400e1a3d:	0006e0        	callx8	a6
+400e1a40:	000d06        	j	400e1a78 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4dc>
+400e1a43:	00          	.byte	00
+400e1a44:	a155e5        	call8	40082fa4 <esp_timer_get_time>
+400e1a47:	712192        	l32i	a9, a1, 0x1c4
+400e1a4a:	1e0c      	movi.n	a14, 1
+400e1a4c:	c08a90        	sub	a8, a10, a9
+400e1a4f:	bba8c1        	l32r	a12, 400d08f0 <_stext+0x8d0> (3ffbb690 <fc_total_time>)
+400e1a52:	023a87        	bltu	a10, a8, 400e1a58 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4bc>
+400e1a55:	00a0e2        	movi	a14, 0
+400e1a58:	7221a2        	l32i	a10, a1, 0x1c8
+400e1a5b:	c09ba0        	sub	a9, a11, a10
+400e1a5e:	c099e0        	sub	a9, a9, a14
+400e1a61:	1a0c      	movi.n	a10, 1
+400e1a63:	0cd8      	l32i.n	a13, a12, 0
+400e1a65:	8d8a      	add.n	a8, a13, a8
+400e1a67:	1cb8      	l32i.n	a11, a12, 4
+400e1a69:	0138d7        	bltu	a8, a13, 400e1a6e <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x4d2>
+400e1a6c:	0a0c      	movi.n	a10, 0
+400e1a6e:	9b9a      	add.n	a9, a11, a9
+400e1a70:	aa9a      	add.n	a10, a10, a9
+400e1a72:	0c89      	s32i.n	a8, a12, 0
+400e1a74:	020c      	movi.n	a2, 0
+400e1a76:	1ca9      	s32i.n	a10, a12, 4
+400e1a78:	0020c0        	memw
+400e1a7b:	f01d      	retw.n
+400e1a7d:	000000        	ill
